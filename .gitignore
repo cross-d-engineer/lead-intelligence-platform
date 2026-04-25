@@ -1,0 +1,15 @@
+venv/
+.env
+*.db
+__pycache__/
+*.pyc
+.DS_Store
+*.sqlite-tools-win-x64-3510300
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/terraform.tfvars
+lambda_layer/
+terraform/lambda_package.zip
+terraform/lambda_layer.zip
+EOF
