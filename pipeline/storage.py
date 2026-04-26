@@ -58,3 +58,4 @@ def get_leads(industry: str = None, city: str = None, status: str = None) -> lis
     with get_connection() as conn:
         rows = conn.execute(f"SELECT * FROM leads {where}", params).fetchall()
         return [dict(row) for row in rows]
+    
