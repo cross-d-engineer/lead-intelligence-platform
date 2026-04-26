@@ -7,6 +7,15 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+
+  backend "s3" {
+  bucket          = "lead-intelligence-tfstate-552433024151"
+  key             = "prod/terraform.tfstate"
+  region          = "us-east-1"
+  dynamodb_table  = "lead-intelligence-tfstate-lock"
+  encrypt         = true
+  }
 }
 
 provider "aws" {
